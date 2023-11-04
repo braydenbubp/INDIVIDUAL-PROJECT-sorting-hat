@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="stylesheet" href="main.css">
+  </head>
+
+
+  <body>
+
+
+    <div>
+      <div class="card" style="width: 18rem;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQccIQ2mChgUL7dCiRMT5UkE8mFIsNcdixb_njciG8jBgH8zWFislP17qCZc__KUwuvtKY&usqp=CAU" class="card-img-top" alt="harry potter sorting hat">
+        <div class="card-body">
+          <p class="card-text">Enter here and find where you belond in the wizarding world!</p>
+          <a href="#" class="btn btn-primary">Welcome to Hogwarts</a>
+        </div>
+      </div>
+
+      <div>
+        <form>
+          <div class="mb-3">
+            <label for="wizardName" class="form-label">Name</label>
+            <input type="name" class="form-control" id="wizardName" >
+          </div>
+          
+          <div class="form-check">
+            <h4>Which traits describe you the most?</h4>
+            <input class="form-check-input" type="radio" name="traitRadio" id="gryfCheck">
+            <label class="form-check-label" for="traitRadio">
+              Bravery/Boldness
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="traitRadio" id="slytCheck" value="Slytherin">
+            <label class="form-check-label" for="traitRadio">
+              Ambition/Determination
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="traitRadio" id="raveCheck" value="Ravenclaw">
+            <label class="form-check-label" for="traitRadio">
+              Cleverness/Creativity
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="traitRadio" id="huffCheck" value="Hufflepuff">
+            <label class="form-check-label" for="traitRadio">
+              Justice/Patience 
+            </label>
+          </div>
+          
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+    </div>
+
+    <div>
+      <button type="button" id="gryf" class="btn btn-primary gryf">Griffyndor</button>
+      <button type="button" id="slyt" class="btn btn-primary slyt">Slytherin</button>
+      <button type="button" id="rave" class="btn btn-primary rave">Ravenclaw</button>
+      <button type="button" id="huff" class="btn btn-primary huff">Hufflepuff</button>
+      <button type="button" id="all" class="btn btn-primary all">Show All</button>
+    </div>
+
+  
+
+    <div id="app"></div>
+    <div id="voldemort"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+
+
+  </body>
+
+</html>
