@@ -27,6 +27,9 @@ const wizards = [
     isExpelled: false
   }
 ]
+
+
+
 const app = document.querySelector("#app")
 const volde = document.querySelector("#voldemort")
 
@@ -154,6 +157,7 @@ const addWiz = (event) => {
     id: wizards.length + 1, 
     name: document.querySelector("#wizardName").value,
     type: document.querySelector('input[name="traitRadio"]:checked').value,
+    isExpelled: false,
   }; 
   wizards.push(newWizard)
   renderToDom(wizards)
