@@ -17,12 +17,12 @@
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQccIQ2mChgUL7dCiRMT5UkE8mFIsNcdixb_njciG8jBgH8zWFislP17qCZc__KUwuvtKY&usqp=CAU" class="card-img-top" alt="harry potter sorting hat">
         <div class="card-body">
           <p class="card-text">Enter here and find where you belond in the wizarding world!</p>
-          <a href="#" class="btn btn-primary">Welcome to Hogwarts</a>
+          <a href="#" class="btn btn-primary" onclick="openForm()">Welcome to Hogwarts</a>
         </div>
       </div>
 
-      <div>
-        <form>
+      <div class="form-popup" id="myForm">
+        <form class="form-container">
           <div class="mb-3">
             <label for="wizardName" class="form-label">Name</label>
             <input type="name" class="form-control" id="wizardName" >
@@ -30,7 +30,7 @@
           
           <div class="form-check">
             <h4>Which traits describe you the most?</h4>
-            <input class="form-check-input" type="radio" name="traitRadio" id="gryfCheck">
+            <input class="form-check-input" type="radio" name="traitRadio" id="gryfCheck" value="Griffyndor">
             <label class="form-check-label" for="traitRadio">
               Bravery/Boldness
             </label>
@@ -54,9 +54,17 @@
             </label>
           </div>
           
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary" onclick="closeForm()">Submit</button>
         </form>
       </div>
+
+      <script>function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }</script>
+
+      <script>function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }</script>
 
     </div>
 
